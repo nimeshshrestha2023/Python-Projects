@@ -33,9 +33,15 @@ Code:
 num1 = int(input("Enter first number: "))
 num2 = int(input("Enter second number: "))
 
-print(f"The addition of {num1} and {num2} is ",num1+num2)   
+print(f"The addition of {num1} and {num2} is ",num1+num2)
 
+#Program to input number and find it's factorial.
 
+Code:
+num = int(input("Enter number: ")
+fact = 1
+for x in range(1 , num + 1):
+    fact = fact*i
 
-
-     Contents on progress ...
+print(f"The factorial of {num} is {fact}")
+    
