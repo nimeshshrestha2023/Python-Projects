@@ -44,4 +44,15 @@ for x in range(1 , num + 1):
     fact = fact*i
 
 print(f"The factorial of {num} is {fact}")
+
+#program to input any number and display the multiplication table.
+
+Code:
+num = int(input("Enter the number: "))
+print(f"Multiplication table for {num}")
+for i in range(1,10):
+    print(f"{num} X {i}={num*i}")
+
+
+           Contents in progress ...
     
