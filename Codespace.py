@@ -27,6 +27,11 @@ Code:
     name = input("Enter the name: ")
     print(f"Hello {name},\n Congratulation, you finally learn the basic python."
 
+#Program in python to input the name and display it
+ Code:
+ name = input("Enter the name: ")
+ print(f"The name you entered was {name}")
+
 #program to input any two numbers and calcualte it's addition.
 
 Code:
@@ -53,6 +58,14 @@ print(f"Multiplication table for {num}")
 for i in range(1,10):
     print(f"{num} X {i}={num*i}")
 
+#Program in python to check whether the number is odd or even
+
+Code:
+num = int(input("Enter the number: "))
+if num%2==0:
+    print(f"The number {num} is even.")
+else:
+    print(f"The number {num} is odd")
 
            Contents in progress ...
     
