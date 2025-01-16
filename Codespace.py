@@ -67,5 +67,25 @@ if num%2==0:
 else:
     print(f"The number {num} is odd")
 
+#Program to check the message is spam msg or not
+Code:
+
+p1 = "Make money with this"
+p2 = "Click here"
+p3 = "Follow me"
+p4 = "Download now"
+
+msg = input("Enter the message: ")
+
+print(f"Message entered: {msg}")
+
+if((p1.lower() in msg.lower()) or (p2.lower() in msg.lower()) or (p3.lower() in msg.lower()) or (p4.lower() in msg.lower())):
+    print("This message is spam")
+else:
+    print("This message is not spam")
+    
+
+
+
            Contents in progress ...
     
