@@ -93,9 +93,18 @@ while password != "password123":
     password = input("Enter the password: ")
 
 print("Access granted ")
+
+#program to input the name until it is satisfied. 
+
+Code:
+name = input("Enter your good name: ")
+
+while name =="":
+    print("Message cannot be empty, !")
+    name = input("Enter your good name: ")
+
+print(f"The message you entered was {name}")
     
-
-
 
            Contents in progress ...
     
