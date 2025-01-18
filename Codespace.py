@@ -83,6 +83,16 @@ if((p1.lower() in msg.lower()) or (p2.lower() in msg.lower()) or (p3.lower() in 
     print("This message is spam")
 else:
     print("This message is not spam")
+
+
+#program to access the password until it is satisfied !
+
+Code:
+password = input("Enter the password ")
+while password != "password123":
+    password = input("Enter the password: ")
+
+print("Access granted ")
     
 
 
