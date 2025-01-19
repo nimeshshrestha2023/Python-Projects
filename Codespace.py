@@ -104,7 +104,19 @@ while name =="":
     name = input("Enter your good name: ")
 
 print(f"The message you entered was {name}")
-    
+
+
+#program to make a payement receipt transaction
+
+Code:
+product_name = input("What do you want to purchase?\n: ")
+product_price = int(input(f"What's the cost of {product_name}?\n"))
+product_qty = int(input(f"How much  {product_name}?\n"))
+
+total_cost = product_price * product_qty
+
+print(f"The total transaction cost for {product_qty} {product_name} is + {total_cost}")
+
 
            Contents in progress ...
     
