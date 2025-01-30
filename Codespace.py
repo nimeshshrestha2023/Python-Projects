@@ -117,6 +117,19 @@ total_cost = product_price * product_qty
 
 print(f"The total transaction cost for {product_qty} {product_name} is + {total_cost}")
 
+#Program to input principal, time and rate and find the simple interest.
+
+Code:
+p = int(input("Enter the principal: "))
+t = float(input("Enter the time: "))
+r = float(input("Enter the rate: "))
+
+si = (p*t*r)/100
+print(f"The simple interest is {si}") 
+
+
+
+
 
            Contents in progress ...
     
