@@ -127,8 +127,21 @@ r = float(input("Enter the rate: "))
 si = (p*t*r)/100
 print(f"The simple interest is {si}") 
 
+#program to input any three numbers and find the greatest number among them.
 
+Code:
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+num3 = int(input("Enter third number: "))
 
+if(num1 >= num2 and num1 >= num3):
+     max = num1;
+elif(num2 >= num1 and num2 >= num3):
+    max = num2;
+else:
+    max = num3;
+
+print(f"The greatest number is {max}")
 
 
            Contents in progress ...
