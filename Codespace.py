@@ -106,7 +106,7 @@ while name =="":
 print(f"The message you entered was {name}")
 
 
-#program to make a payement receipt transaction
+#program to make a payment receipt transaction
 
 Code:
 product_name = input("What do you want to purchase?\n: ")
