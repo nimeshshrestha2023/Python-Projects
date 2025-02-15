@@ -16,7 +16,7 @@ Guido van Rossum and first released in 1991, which was named as 'Python' as insp
 print("Hello future developers")
 
 #program to input the value and then display it.
-  int num = int(input("Enter number: "))
+  num = int(input("Enter number: "))
   print(f"The number you entered is {num}")
 
 #program to display the the following message.
