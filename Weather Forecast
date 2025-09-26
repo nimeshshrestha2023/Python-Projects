@@ -1,0 +1,51 @@
+import requests
+
+city = "Kathmandu"
+geo_url  = "https://geocoding-api.open-meteo.com/v1/search"
+
+params = {"name":"Kathmandu" , "count":1,"language":"en", "format": "json"}
+
+
+
+# Assuming geo_url and params are defined earlier in your code
+r = requests.get(geo_url, params, timeout=5)
+
+# Convert response to dictionary
+data = r.json()
+
+# Print the raw JSON data
+print("Raw geocoding JSON:", data)
+
+if "results" not in data or not data["results"]:
+    print("City not found.")
+    exit()  # or use return if inside a function
+
+top = data["results"][0]
+
+lat, lon = top["latitude"], top["longitude"]
+
+print("Coords:", lat, lon)
+
+
+wx_url = "https://api.open-meteo.com/v1/forecast"
+
+
+wx_params = {
+    "latitude": lat,
+    "longitude": lon,
+    "current_weather": True,
+    "timezone": "auto"
+}
+
+# Assuming wx_url and wx_params are defined earlier
+w = requests.get(wx_url, params=wx_params, timeout=5)
+
+# Convert response to dictionary
+wx = w.json()
+
+cw = wx.get("current_weather", {})
+temp_now = cw.get("temperature")
+
+summary_line = f"{city}: {temp_now}°C"
+
+print(summary_line)
